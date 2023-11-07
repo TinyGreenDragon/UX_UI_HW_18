@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 header {
-  background-color: #373738;
+  background-color: #1c4d3a;
   padding: 15px;
 }
 header ul {
@@ -29,13 +29,13 @@ header p {
 }
 button {
   padding: 15px;
-  background-color: #373738;
+  background-color: #9dbead;
   color: white;
   font-size: 15px;
   border-radius: 4px;
 }
 footer {
-  background-color: #373738;
+  background-color: #1c4d3a;
   padding: 5px;
   color: white;
 }
@@ -48,3 +48,33 @@ footer li {
   padding: 0px 7px;
 }
 
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  width: 33%;
+  margin: 1%;
+  padding: 1%  
+}
+
+.flexContainer div {
+  padding: 1%;
+  width: 400px;
+}
+
+.workGrid {
+  display: grid;
+  padding: 2%;
+  grid-template-areas: 'item1 item2';
+  grid-template-rows: 2;
+  grid-template-columns: 2;
+}
+
+@media only screen and (max-width: 600){
+  .flexContainer {
+    flex-direction: column;
+    width: 100%;
+    grid-template-areas: 'item1 item2';
+    grid-template-rows: 300px 300px;
+    grid-auto-columns: 1fr 1fr;
+  }  
+}
